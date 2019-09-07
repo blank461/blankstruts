@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<struts>
+	<package>
+		<!-- 我们对action标签属性限定 
+			 name、class必填 且示例如下 
+			 method非必填，默认为execute-->
+		<action name="login" class="lf.blank.web.LoginAction">
+			<!-- result标签我们也做限定 
+				name必填 
+				页面路径必填 
+				type非必填 默认为dispatcher 还可为redirect -->
+			<result name="success">/index.jsp</result>
+			<result name="error">/error.jsp</result>
+			<result name="login" type="redirect">/login.jsp</result>
+		</action>
+	</package>
+</struts>
